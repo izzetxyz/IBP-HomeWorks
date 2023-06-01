@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .image-map {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-map a {
+      position: absolute;
+      border: 2px solid #ff0000;
+      background-color: rgba(255, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Images and Image Maps Example</h1>
+
+    <!-- Single Image -->
+    <h3>Single Image</h3>
+    <img src="example.jpg" alt="Example Image" class="img-fluid">
+
+    <!-- Image Map -->
+    <h3>Image Map</h3>
+    <div class="image-map">
+      <img src="worldmap.jpg" alt="World Map" usemap="#worldmap" class="img-fluid">
+      <map name="worldmap">
+        <area shape="rect" coords="0,0,100,100" href="https://example.com" alt="North America">
+        <area shape="rect" coords="100,0,200,100" href="https://example.com" alt="South America">
+        <area shape="rect" coords="0,100,200,200" href="https://example.com" alt="Europe">
+        <area shape="rect" coords="200,100,300,200" href="https://example.com" alt="Asia">
+      </map>
+    </div>
+
+    <!-- Color in HTML -->
+    <h3>Color in HTML5</h3>
+    <div class="row">
+      <div class="col-4" style="background-color: #ff0000;">Red</div>
+      <div class="col-4" style="background-color: #00ff00;">Green</div>
+      <div class="col-4" style="background-color: #0000ff;">Blue</div>
+    </div>
+  </div>
+</body>
+</html>

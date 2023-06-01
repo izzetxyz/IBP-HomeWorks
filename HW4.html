@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Form Example</h1>
+
+    <form action="submit.php" method="get" target="_self">
+      <div class="form-group">
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" class="form-control" placeholder="Enter your name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" class="form-control" placeholder="Enter your email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="messageInput">Message</label>
+        <textarea id="messageInput" class="form-control" rows="4" placeholder="Enter your message" name="message"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit (GET)</button>
+    </form>
+
+    <form action="submit.php" method="post" target="_blank">
+      <div class="form-group">
+        <label for="usernameInput">Username</label>
+        <input type="text" id="usernameInput" class="form-control" placeholder="Enter your username" name="username">
+      </div>
+
+      <div class="form-group">
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" class="form-control" placeholder="Enter your password" name="password">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit (POST, new tab)</button>
+    </form>
+
+    <form action="submit.php" method="post" target="_top">
+      <div class="form-group">
+        <label for="ageInput">Age</label>
+        <input type="number" id="ageInput" class="form-control" placeholder="Enter your age" name="age">
+      </div>
+
+      <div class="form-group">
+        <label for="genderInput">Gender</label>
+        <select id="genderInput" class="form-control" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit (POST, same tab)</button>
+    </form>
+  </div>
+</body>
+</html>
